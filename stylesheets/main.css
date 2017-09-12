@@ -1,0 +1,264 @@
+header{
+    height: 65px;
+}
+main{
+    position: relative;
+    height: calc(100vh - 135px);
+}
+footer{
+    height: 50px;
+}
+h1{
+    font-size: 2.5em;
+    display: inline-block;
+}
+.options{
+    float: right;
+}
+.options button{
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    font: 1.5em 'Indie Flower', cursive;
+    background-color: #fdddab;
+    color: red;
+    text-shadow: 0px 0px 10px white;
+    transition: background-color 1s;
+    margin-right: 10px;
+}
+#logout-btn{
+    padding: 2px 11px;
+}
+#info-btn{
+    padding: 9px 18px 0px 17px;
+}
+.options button:hover{
+     background-color: #fff2a2;
+}
+.list{
+    height: 100%;
+    width: 100%;
+    background-color: #f9fbd6;
+    overflow: auto;
+    padding: 30px 15px;
+}
+.item{
+    display: block;
+    padding: 10px 0px;
+    border-bottom: 1px dotted rgba(180,87,46, 0.4);
+}
+.item img{
+    opacity: 0;
+    vertical-align:  middle;
+    width: 6%;
+}
+.item p{
+    display: inline-block;
+    vertical-align: middle;
+    width: 85%;
+    font-size: 1.5em;
+    margin-left: 10px;
+    color: #ab481e;
+    transition: color 500ms;
+    padding-top: 5px;
+}
+.item span:hover{
+    color: #fb6727;
+}
+.delete-box{
+    position: absolute;
+    top: 5px;
+    right: 25px;
+}
+.delete-box form{
+    display: inline-block;
+}
+.delete-box button{
+    display: inline-block;
+    opacity: 0.5;
+    border: 1.4px solid #f9af53;
+    background-color: #ffe699;
+    font: 1em 'Indie Flower', cursive;
+    border-radius: 5px;
+    padding: 0 5px;
+    cursor: pointer;
+    color: #a11800;
+    transition: opacity 1s;
+}
+.delete-box button:hover{
+    opacity: 1;
+}
+footer input{
+    margin-top: 5px;
+    font: 2em 'Indie Flower', cursive;
+    border: none;
+}
+footer input[type="text"]{
+    width: 75%;
+    background-color: #f9fdc5;
+    color: #db7a01;
+    transition: background-color 1s;
+    padding: 0 10px;
+}
+footer input[type="text"]::-webkit-input-placeholder {
+    color: #db7a01;
+}
+footer input[type="text"]:-moz-placeholder {
+    /* FF 4-18 */
+    color: #db7a01;
+}
+footer input[type="text"]::-moz-placeholder {
+    /* FF 19+ */
+    color: #db7a01;
+}
+footer input[type="text"]:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #db7a01;
+}
+footer input[type="text"]:hover, footer input[type="text"]:focus{
+    background-color: #f7fdab;
+}
+footer input[type="submit"]{
+    width: 45px;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    font: 2em 'Indie Flower', cursive;
+    background-color: #fdddab;
+    color: red;
+    text-shadow: 0px 0px 10px white;
+    transition: background-color 1s;
+}
+footer input[type="submit"]:hover{
+     background-color: #fff2a2;
+}
+.info{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FF7F50;
+    padding: 30px;
+}
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    border: none;
+    padding: 0px 15px;
+    margin: 0px 10px 50px 0px;
+    border-radius: 100%;
+    cursor: pointer;
+    font: 2em 'Indie Flower', cursive;
+    background-color: #fdddab;
+    color: red;
+    text-shadow: 0px 0px 10px white;
+    transition: background-color 1s;
+}
+.info h2{
+    font-size: 3em;
+    color: white;
+    text-shadow: 0px 0px 8px #FF6600;
+}
+.text-box{
+    max-height: 85%;
+    overflow: auto;
+}
+.info p{
+    font-size: 1.8em;
+    color: #3c0f0a;
+}
+.pop-up{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(255,102,0,0.5); 
+}
+.pop-up .message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    max-height: 100%;
+    padding: 15px;
+    background-color: #FF7F50;
+    text-align: center;
+}
+.message .close-btn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    padding: 0px 11px;
+    margin: 0;
+    border-radius: 100%;
+    cursor: pointer;
+    font: 1.5em 'Indie Flower', cursive;
+    background-color: #fdddab;
+    color: red;
+    text-shadow: 0px 0px 10px white;
+    transition: background-color 1s;
+}
+.message h3{
+    font-size: 1.5em;
+    color: #3a1700;
+}
+.message hr{
+    border: 1px solid rgba(120,48,0, 0.5);
+    margin: 10px;
+}
+.message p{
+    font-size: 1.3em;
+    color: #741717;
+}
+.message .confirm-btn{
+    border: none;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+    font: 1.5em 'Indie Flower', cursive;
+    background-color: #fdddab;
+    color: red;
+    text-shadow: 0px 0px 10px white;
+    transition: background-color 1s;
+}
+.message .confirm-btn:hover{
+     background-color: #fff2a2;
+}
+.error{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: red;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .delete-box button{
+        opacity: 0.8;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1{
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    h1{
+        font-size: 1.5em;
+    }
+}

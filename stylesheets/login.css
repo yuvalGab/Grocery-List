@@ -1,0 +1,102 @@
+header{
+    padding-top: 20px;
+    text-align: center;
+}
+main{
+    padding: 40px;
+}
+input{
+    margin-bottom: 40px;
+    font: 2.5em 'Indie Flower', cursive;
+    border: none;
+}
+.field{
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    background-color: #f9fdc5;
+    color: #db7a01;
+    transition: background-color 1s;
+}
+.field:focus, .field:hover{
+    background-color: #f7fdab;
+}
+.field::-webkit-input-placeholder {
+    color: #db7a01;
+}
+.field:-moz-placeholder {
+    /* FF 4-18 */
+    color: #db7a01;
+}
+.field::-moz-placeholder {
+    /* FF 19+ */
+    color: #db7a01;
+}
+.field:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #db7a01;
+}
+input[type="submit"]{
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    padding: 35px;
+    background-color: #ecd67e;
+    cursor: pointer;
+    color: #ba6333;
+    transition: background-color 1s, color 1s;
+}
+input[type="submit"]:hover{
+    background-color: #ffe26e;
+    color: #c14500;
+}
+footer{
+    text-align: center;
+    padding-bottom: 40px;
+}
+footer button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: 1.4em 'Indie Flower', cursive;
+    color: #ffe64e;
+    transition: color 1s;
+}
+footer button:hover{
+    color: #fdff00;
+}
+.error{
+    text-align: center;
+    background-color: red;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+.create-user{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FF7F50;
+    padding: 120px 30px 60px 30px;
+}
+#close-btn{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    border: none;
+    padding: 0px 18px;
+    margin: 0px 10px 50px 0px;
+    border-radius: 100%;
+    cursor: pointer;
+    font: 3em 'Indie Flower', cursive;
+    background-color: #fdddab;
+    color: red;
+    text-shadow: 0px 0px 10px white;
+    transition: background-color 1s;
+}
+#close-btn:hover{
+    background-color: #fff2a2;
+}
